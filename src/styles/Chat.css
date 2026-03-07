@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Chat.css */
+body {
+  @apply bg-[#ece5dd]; /* WhatsApp-like background */
+}
+
+.chat-container {
+  @apply max-w-2xl mx-auto mt-8;
+}
+
+.chat-title {
+  @apply text-center text-2xl font-bold mb-6;
+}
+
+/* WhatsApp-style background */
+.chat-box {
+  @apply border rounded-lg p-4 mb-4 h-96 overflow-y-auto shadow-sm;
+  background-color: #ece5dd; /* WhatsApp's chat background */
+}
+
+/* Message bubbles */
+.chat-message {
+  @apply flex mb-2;
+}
+
+.chat-message-left {
+  @apply justify-start;
+}
+
+.chat-message-right {
+  @apply justify-end;
+}
+
+.chat-bubble-left {
+  @apply bg-white text-gray-800 px-3 py-2 rounded-lg max-w-xs shadow;
+}
+
+.chat-bubble-right {
+  @apply bg-green-200 text-gray-800 px-3 py-2 rounded-lg max-w-xs shadow;
+}
+
+/* Inputs */
+.chat-input {
+  @apply w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500;
+}
+
+.chat-message-input {
+  @apply flex-1 border rounded-l-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500;
+}
+
+.chat-send-btn {
+  @apply bg-green-500 text-white px-4 py-2 rounded-r-md hover:bg-green-600 disabled:opacity-50;
+}

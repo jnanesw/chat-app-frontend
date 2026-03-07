@@ -1,0 +1,72 @@
+/* @import "tailwindcss"; */
+
+
+  .chat-messages {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 6px;
+  overflow-y: auto;
+  background-color: #f7edde;
+}
+
+/* Base message bubble */
+.message {
+  max-width: 60%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.group-button-container {
+  position: absolute;
+  bottom: 90px;
+  right: 25px;
+}
+
+.group-create-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0d130f;
+  color: white;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+
+.group-create-btn:hover {
+  background-color: #363d39;
+}
+
+.group-create-box {
+  position: absolute;
+  bottom: 150px;
+  right: 25px;
+  background: rgb(17, 17, 17);
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.group-create-box input {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+}
+
+.group-create-box button {
+  width: 100%;
+  padding: 6px;
+  background: #25d366;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer components {
+  .username-container {
+    @apply h-screen flex items-center justify-center bg-[#0b141a];
+  }
+
+  .username-box {
+    @apply bg-[#202c33] p-8 rounded-xl w-96 text-center;
+  }
+
+  .username-title {
+    @apply text-white text-xl font-semibold mb-6;
+  }
+
+  .username-input {
+    @apply w-full px-4 py-3 rounded-lg bg-[#2a3942]
+           text-white outline-none mb-4;
+  }
+
+  .username-button {
+    @apply w-full py-3 rounded-lg bg-emerald-600
+           hover:bg-emerald-700 transition font-medium text-white;
+  }
+}
