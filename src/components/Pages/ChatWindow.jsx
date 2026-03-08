@@ -1,6 +1,6 @@
 // src/components/ChatWindow/ChatWindow.jsx
 import React, { useEffect, useState } from "react";
-import "./chatWindow.css";
+import "./ChatWindow.css";
 import { chatHistory } from "../../services/api";
 
 import { Stomp } from "@stomp/stompjs";
