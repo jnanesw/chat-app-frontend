@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import ConversationList from "../Sidebar/ConversationList";
 import EmptyChatPlaceholder from "./EmptyChatPlaceholder";
-import ChatWindow from "./ChatWindows";
+import ChatWindow from "./ChatWindow";
 import { getConversations } from "../../services/api";
 
 const ChatLayout = ({currentUser}) => {

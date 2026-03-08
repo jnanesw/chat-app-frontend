@@ -3,7 +3,7 @@ options:
 
 steps:
 # Clean install
-- name: node:20
+- name: node:22
   entrypoint: bash
   args:
     - -c
@@ -12,7 +12,7 @@ steps:
       npm install
 
 # Build project
-- name: node:20
+- name: node:22
   entrypoint: npm
   args: ["run", "build"]
 
