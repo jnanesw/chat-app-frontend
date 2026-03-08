@@ -1,10 +1,10 @@
 import axios from "axios";
 
 // const BACKEND_API_BASE_URL = process.env.BACKEND_API_BASE_URL;
-const BACKEND_API_BASE_URL="http://localhost:8080/api"
+const BACKEND_API_BASE_URL="https://chat-app-backend-916297375578.europe-west1.run.app/api"
 
 export const loadMessages =  async()=>{
-    const response  = await axios.get("http://localhost:8080/api/chatHistory");
+    const response  = await axios.get("https://chat-app-backend-916297375578.europe-west1.run.app/api/chatHistory");
     // console.log("Message History: ", response.data);
     return response.data;
 }
