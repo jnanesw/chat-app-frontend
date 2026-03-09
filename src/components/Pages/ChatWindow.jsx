@@ -43,7 +43,7 @@ const ChatWindow = ({ conversation, currentUser , loadConversations}) => {
     useEffect(() => {
     if (!conversation.id) return;
     
-    const socket = new SockJS("http://localhost:8080/ws");
+    const socket = new SockJS("https://chat-app-backend-916297375578.europe-west1.run.app/ws");
     const stomp = Stomp.over(socket);
 
     stomp.connect({}, () => {
