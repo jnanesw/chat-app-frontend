@@ -10,7 +10,9 @@ import { sendMessage } from "../../services/api";
 import CreateGroup from "./CreateGroup";
 
 const ChatWindow = ({ conversation, currentUser , loadConversations}) => {
-    console.log("selectedConversation: ", conversation.id);
+  // var Process = process;
+    console.log("selectedConversation: ", conversation);
+    console.log("Variable from env: ", import.meta.env.VITE_SOCKJS_URL);
     const [message, setMessage] = useState("");
     const [messages, setMessages] = useState([]);
     const [messageHistory, setMessageHistory] = useState([]);
@@ -43,7 +45,7 @@ const ChatWindow = ({ conversation, currentUser , loadConversations}) => {
     useEffect(() => {
     if (!conversation.id) return;
     
-    const socket = new SockJS("https://chat-app-backend-916297375578.europe-west1.run.app/ws");
+    const socket = new SockJS(`${import.meta.env.VITE_PROD_SOCKJS_URL}/ws`);
     const stomp = Stomp.over(socket);
 
     stomp.connect({}, () => {

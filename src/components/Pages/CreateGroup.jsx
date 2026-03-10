@@ -27,7 +27,7 @@ const CreateGroup = ({currentUser, selectedConversation, loadConversations})=>{
         userId: currentUser.userId,
         groupName: selectedConversation.conversationType === "GROUP" ? selectedConversation.receiverName : groupName,
         participants: usernames,
-        conversationId: selectedConversation.id
+        conversationId: selectedConversation.conversationType === "GROUP" ? selectedConversation.id : null
       });
 
       loadConversations();
